@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>HTML Template</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+   <link type="text/css" rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+   <link type="text/css" rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+   <link type="text/css" rel="stylesheet" href="{{ asset('css/owl.theme.default.css') }}">
+   <link type="text/css" rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+   <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+   <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+
+<body>
+   <header id="home">
+      <div class="bg-img" style="background-image: url('./img/background1.jpg');">
+         <div class="overlay"></div>
+      </div>
+      {% include 'navtemplate.html.twig' %}
+    
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+                <div class="home-content">
+                    {% block content %} {% endblock %}
+                </div>
+            </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+   <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+   <script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+   <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+</body>
+
 </html>
