@@ -18,13 +18,18 @@
           <li {% if app.request.attributes.get('_route') == "portfolio" %} class="active" {% endif %} ><a href="{{ path("portfolio") }}">Portfolio</a></li>
           <!--<li><a href="#service">Services</a></li>
           <li><a href="#pricing">Prices</a></li>
-          <li><a href="#team">Team</a></li> 
+          <li><a href="#team">Team</a></li>
           <li class="has-dropdown"><a href="#blog">Blog</a>
              <ul class="dropdown">
                 <li><a href="blog-single.html">blog post</a></li>
              </ul>
           </li> -->
-          <li {% if app.request.attributes.get('_route') == "blog" %} class="active" {% endif %}><a href="{{ path("blog") }}">Blog</a></li>
+          <li class="has-dropdown" {% if app.request.attributes.get('_route') == "blog" %} class="active" {% endif %}>
+            <a href="{{ path("blog") }}">Blog</a>
+            <ul class="dropdown">
+            <li><a href="blog-single.html">blog post</a></li>
+            </ul>
+          </li> 
           <li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path("contact") }}">Contact</a></li>
        </ul>
     </div>
