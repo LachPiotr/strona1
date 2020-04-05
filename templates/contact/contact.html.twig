@@ -3,13 +3,14 @@
 
 {% block content %} 
 
-    <form action="*"> 
-    <label>Imię</label> <input type="text" name="imie" size="20" maxlength="40">
-    <label>Nazwisko</label> <input type="text" name="nazwisko" size="20" maxlenght="40">
-    <label>Email</label> <input type="text" name="email" size="42" maxlenght="80">
-    <label>Nr Telefonu</label> <input type="text" name="nrtelefonu" size="42" maxlenght="80"> <br /><br />
+    <form>
 
-    <textarea name="Wiadomość" cols="1" rows="1"></textarea>
+        <input class="a50" type="text" placeholder="Imię" />
+        <input class="a50" type="text" placeholder="Nazwisko"  />
+        <input type="text" placeholder="Email"  />
+        <input type="text" placeholder="Nr telefonu"  />
+        <textarea name="wiadomosc" cols="40" rows="3">Wiadomość</textarea>
+        <input type="submit" name="wyslij" />
 
     </form>
 

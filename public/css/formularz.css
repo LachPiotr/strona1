@@ -1,0 +1,54 @@
+input[type="text"] 
+{
+    background-color: #dfcccc;
+    color: #666666;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+
+.a50
+{
+    width: calc(50% - 8px) !important;
+    box-sizing: border-box;
+}
+
+.a100
+{
+    width: 100%;
+    
+}
+
+textarea
+{
+    background-color: #dfcccc;
+    color: #666666;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 80px;
+    margin-left: 2px;
+    margin-right: 10px;
+    float: left;
+}
+
+input[type="submit"] 
+{
+    width: 100px;
+    background-color: #e9e5b4;
+    font-size: 14px;
+    color: grey;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 1px;
+
+}
