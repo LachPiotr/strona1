@@ -24,12 +24,16 @@
                 <li><a href="blog-single.html">blog post</a></li>
              </ul>
           </li> -->
+<<<<<<< HEAD
           <li class="has-dropdown" {% if app.request.attributes.get('_route') == "blog" %} class="active" {% endif %}>
             <a href="{{ path("blog") }}">Blog</a>
             <ul class="dropdown">
             <li><a href="blog-single.html">blog post</a></li>
             </ul>
           </li> 
+=======
+          <li {% if app.request.attributes.get('_route') == "blog" %} class="active" {% endif %}><a href="{{ path("blog") }}">Blog</a></li>
+>>>>>>> #9
           <li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path("contact") }}">Contact</a></li>
        </ul>
     </div>
