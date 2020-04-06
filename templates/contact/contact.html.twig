@@ -3,14 +3,14 @@
 
 {% block content %} 
 
-    <form>
+    <form method="post" action="">
 
-        <input class="a50" type="text" placeholder="Imię" />
-        <input class="a50" type="text" placeholder="Nazwisko"  />
-        <input type="text" placeholder="Email"  />
-        <input type="text" placeholder="Nr telefonu"  />
+        <input name="imie" class="a50" type="text" placeholder="Imię" />
+        <input name="nazwisko" class="a50" type="text" placeholder="Nazwisko"  />
+        <input name="email" type="text" placeholder="Email"  />
+        <input name="nrtelefonu" type="text" placeholder="Nr telefonu"  />
         <textarea name="wiadomosc" cols="40" rows="3">Wiadomość</textarea>
-        <input type="submit" name="wyslij" />
+        <input type="submit" />
 
     </form>
 
